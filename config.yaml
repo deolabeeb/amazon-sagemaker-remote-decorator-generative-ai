@@ -4,9 +4,9 @@ SageMaker:
     Modules:
       RemoteFunction:
         Dependencies: ./requirements.txt
-        ImageUri: '763104351884.dkr.ecr.eu-west-1.amazonaws.com/huggingface-pytorch-training:2.0.0-transformers4.28.1-gpu-py310-cu118-ubuntu20.04'
+        ImageUri: '848055118036.dkr.ecr.us-east-1.amazonaws.com/amazon-sagemaker-remote-decorator-generative-ai:2.0.0-transformers4.28.1-gpu-py310-cu118-ubuntu20.04'
         InstanceType: ml.g5.12xlarge
-        RoleArn:
+        RoleArn: arn:aws:iam::848055118036:role/service-role/SageMaker-DataScientist-EKAI
   Model:
-    ExecutionRoleArn:
+    ExecutionRoleArn: arn:aws:iam::848055118036:role/service-role/AmazonSageMaker-ExecutionRole-20231112T121189
     EnableNetworkIsolation: false
